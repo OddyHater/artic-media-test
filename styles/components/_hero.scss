@@ -1,0 +1,88 @@
+@import '../helpers/mixins';
+
+.hero {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 720px;
+
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.47) 22.4%, rgba(0, 0, 0, 0.47) 100%), url(../../assets/images/hero-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  // .hero__wrapper
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  // .hero__title
+
+  &__title {
+    max-width: 835px;
+    margin: 0 auto;
+
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+  }
+
+  // .hero__subtitle
+
+  &__subtitle {
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1.2;
+    color: #fff;
+  }
+
+  // .hero__call-button
+
+  &__call-button {
+    @include link;
+  }
+}
+
+.socials {
+  position: absolute;
+  right: 32px;
+  bottom: 38px;
+
+
+  // .socials__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  // .socials__list-item
+
+  &__list-item {
+  }
+
+  // .socials__link
+
+  &__link {
+  }
+
+  // .socials__icon
+
+  &__icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+  }
+}
