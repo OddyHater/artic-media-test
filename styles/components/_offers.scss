@@ -2,13 +2,13 @@
   position: relative;
   z-index: 2;
 
-  margin-top: -105px;
+  margin-top: -75px;
   margin-bottom: 60px;
 
   // .offers__wrapper
 
   &__wrapper {
-    max-width: 1180px;
+    max-width: 1210px;
   }
 
   // .offers__list
@@ -22,6 +22,7 @@
 .card {
   flex: 1;
 
+  box-sizing: border-box;
   display: flex;
   align-items: end;
   min-height: 305px;

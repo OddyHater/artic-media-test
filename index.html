@@ -12,19 +12,30 @@
   <body>
     <header class="header">
       <div class="header__wrapper">
-        <div class="header__menu">
+        <div class="header__top-container">
+          <div class="header__menu">
+            <span></span>
+          </div>
+          <img src="./assets/images/header-logo.svg" alt="" class="header__logo">
+          <div class="header__phone-container">
+            <p class="header__phone-text">8 800 345 45 67</p>
+            <a href="tel: +7(800)345-45-67" class="header__phone-link">Заказать звонок</a>
+          </div>
 
-        </div>
-        <img src="#" alt="" class="header__logo">
-        <div class="header__phone-container">
-          <p class="header__phone-text"></p>
-          <a href="" class="header__phone-link"></a>
+          <div class="header__language-container">
+            <p class="header__language header__language_ru">ru</p>
+            <p class="header__language header__language_en">en</p>
+          </div>
         </div>
 
-        <div class="header__language-container">
-          
+        <div class="header__bottom-container">
+          <a href="#" class="header__link">GSK аренда</a>
+          <a href="#" class="header__link">GSK фитнес туры</a>
+          <a href="#" class="header__link">Программы оздоровления</a>
+          <a href="#" class="header__link">Клиника Vitalica</a>
         </div>
       </div>
+
     </header>
 
     <section class="hero">
@@ -156,29 +167,35 @@
 
         <div class="footer__contacts">
           <div class="footer__contacts-container">
-            <h3 class="footer__contact-title">
-              Çağlayan, 2052. Sk. No:43, 
-              07200 Muratpaşa/Antalya, Турция
-            </h3>
-            <p class="footer__contact-mail">
-              halloretreat@gmail.com
-            </p>
-            <a href="#" class="footer__contact-link">
-              Показать на карте
-            </a>
+            <img src="./assets/images/map-icon.svg" alt="" class="footer__contacts-icon">
+            <div class="footer__contacts-content">
+              <h3 class="footer__contact-title">
+                Çağlayan, 2052. Sk. No:43,
+                07200 Muratpaşa/Antalya, Турция
+              </h3>
+              <p class="footer__contact-mail">
+                halloretreat@gmail.com
+              </p>
+              <a href="#" class="footer__contact-link">
+                Показать на карте
+              </a>
+            </div>
           </div>
 
           <div class="footer__contacts-container">
-            <h3 class="footer__contact-title">
-              Çağlayan, 2052. Sk. No:43, 
-              07200 Muratpaşa/Antalya, Турция
-            </h3>
-            <p class="footer__contact-mail">
-              halloretreat@gmail.com
-            </p>
-            <a href="#" class="footer__contact-link">
-              Показать на карте
-            </a>
+            <img src="./assets/images/map-icon.svg" alt="" class="footer__contacts-icon">
+            <div class="footer__contacts-content">
+              <h3 class="footer__contact-title">
+                Çağlayan, 2052. Sk. No:43,
+                07200 Muratpaşa/Antalya, Турция
+              </h3>
+              <p class="footer__contact-mail">
+                halloretreat@gmail.com
+              </p>
+              <a href="#" class="footer__contact-link">
+                Показать на карте
+              </a>
+            </div>
           </div>
 
           <div class="footer__socials">
@@ -196,8 +213,10 @@
             </a>
           </div>
         </div>
+      </div>
 
-        <div class="footer__bottom-container">
+      <div class="footer__bottom-container">
+        <div class="footer__bottom-wrapper">
           <span class="footer__copyright">
             © 2023 ASKGSKGO Int.
           </span>
@@ -212,6 +231,59 @@
       </div>
     </footer>
 
-    <script src="./scripts/index.js"></script>
+    <div class="menu">
+      <div class="menu__content-container">
+        <div class="menu__links menu__links_top">
+          <a href="#" class="menu__link">GSK rent</a>
+          <a href="#" class="menu__link">Wellness experts</a>
+          <a href="#" class="menu__link">GSK Retreats</a>
+          <a href="#" class="menu__link">Area sightseeing</a>
+          <a href="#" class="menu__link">Healths packages</a>
+          <a href="#" class="menu__link">Travel insuranse</a>
+          <a href="#" class="menu__link">Vitalica clinic</a>
+          <a href="#" class="menu__link">Healing partners</a>
+        </div>
+
+        <div class="menu__links menu__links_bottom">
+          <a href="#" class="menu__link">Destinations</a>
+          <a href="#" class="menu__link">About Us</a>
+          <a href="#" class="menu__link">Blog</a>
+          <a href="#" class="menu__link">Contact Us</a>
+        </div>
+
+        <img src="./assets/images/menu-logo.svg" alt="footer logo" class="menu__logo">
+
+        <div class="menu__contact-container">
+          <img src="./assets/images/menu-map-icon.svg" alt="" class="menu__contact-icon">
+          <div class="menu__contact-content">
+            <h3 class="menu__contact-title">
+              Çağlayan, 2052. Sk. No:43,
+              07200 Muratpaşa/Antalya, Турция
+            </h3>
+            <p class="menu__contact-mail">
+              halloretreat@gmail.com
+            </p>
+          </div>
+        </div>
+
+        <div class="menu__contact-container">
+          <img src="./assets/images/menu-map-icon.svg" alt="" class="menu__contact-icon">
+          <div class="menu__contact-content">
+            <h3 class="menu__contact-title">
+              Çağlayan, 2052. Sk. No:43,
+              07200 Muratpaşa/Antalya, Турция
+            </h3>
+            <p class="menu__contact-mail">
+              halloretreat@gmail.com
+            </p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/images/menu-image.png" alt="" class="menu__image">
+
+      <button type="button" class="menu__close-button"></button>
+    </div>
+
+    <script type="module" src="./scripts/index.js"></script>
   </body>
 </html>

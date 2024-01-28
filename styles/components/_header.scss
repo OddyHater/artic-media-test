@@ -1,0 +1,157 @@
+@import '../helpers/colors';
+@import '../helpers/mixins';
+
+.header {
+  font-family: "Nunito", sans-serif;
+  /* .header__wrapper */
+
+  &__wrapper {
+
+  }
+
+  /* .header__top-container */
+
+  &__top-container {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 140px 14px 24px;
+  }
+
+  /* .header__menu */
+
+  &__menu {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    width: 40px;
+    height: 24px;
+
+    cursor: pointer;
+
+    span {
+      display: block;
+      width: 100%;
+      height: 2px;
+
+      border-radius: 5px;
+      background-color: $main;
+    }
+
+    &::before, &::after {
+      position: absolute;
+      content: '';
+
+      display: block;
+      width: 100%;
+      height: 2px;
+
+      background-color: $main;
+      border-radius: 5px;
+    }
+
+    &::before {
+      top: 11px;
+    }
+
+    &::after {
+      bottom: 0;
+    }
+  }
+
+  /* .header__logo */
+
+  &__logo {
+    position: absolute;
+    left: calc(50% - 186px / 2);
+  }
+
+  /* .header__phone-container */
+
+  &__phone-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  /* .header__phone-text */
+
+  &__phone-text {
+    color: $main;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  /* .header__phone-link */
+
+  &__phone-link {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    color: $main;
+    text-decoration: none;
+
+    border-bottom: 1px $main solid;
+  }
+
+  /* .header__language-container */
+
+  &__language-container {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #fff;
+
+    background-color: $main;
+
+  }
+
+  /* .header__language */
+
+  &__language {
+    padding: 17px 15px 18px;
+
+    text-transform: capitalize;
+
+    /* .header__language_ru */
+
+    &_ru {
+      border-right: 1px #fff solid;
+    }
+
+    /* .header__language_en */
+
+    &_en {
+    }
+  }
+
+  /* .header__bottom-container */
+
+  &__bottom-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    padding: 13px 0;
+
+    color: $main;
+
+    background-color: #94C2BD;
+  }
+
+  /* .header__link */
+
+  &__link {
+
+    color: inherit;
+    text-decoration: none;
+  }
+}

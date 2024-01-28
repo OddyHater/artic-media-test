@@ -1,0 +1,139 @@
+@import '../helpers/colors';
+
+.menu {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
+
+  display: flex;
+  max-height: 100vh;
+
+  background-color: #fff;
+
+  overflow: hidden;
+  opacity: 0;
+
+  transition: all 0.3s ease;
+
+  &_active {
+    z-index: 5;
+
+    opacity: 1;
+  }
+
+
+  /* .menu__content-container */
+
+  &__content-container {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    padding: 56px 123px 54px 130px;
+  }
+
+  /* .menu__links */
+
+  &__links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 30px 124px;
+
+    /* .menu__links_top */
+
+    &_top {
+      margin-bottom: 66px;
+    }
+
+    &_bottom {
+      margin-bottom: 102px;
+    }
+  }
+
+  /* .menu__link */
+
+  &__link {
+    display: inline;
+    font-size: 25px;
+    font-weight: 450;
+    line-height: 1;
+    text-decoration: none;
+    color: $main;
+  }
+
+  /* .menu__logo */
+
+  &__logo {
+    display: block;
+    align-self: start;
+    margin-top: auto;
+    margin-bottom: 33px;
+  }
+
+  /* .menu__contact-container */
+
+  &__contact-container {
+    display: flex;
+    align-items: start;
+    gap: 6px;
+    max-width: 270px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 32px;
+    }
+  }
+
+  /* .menu__contact-icon */
+
+  &__contact-icon {
+    display: block;
+  }
+
+  /* .menu__contact-content */
+
+  &__contact-content {
+    font-family: 'Nunito';
+  }
+
+  /* .menu__contact-title */
+
+  &__contact-title {
+    margin-bottom: 6px;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 18px;
+  }
+
+  /* .menu__contact-mail */
+
+  &__contact-mail {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  &__image {
+    flex: 1;
+
+    max-width: 50%;
+  }
+
+  &__close-button {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+
+    width: 52px;
+    height: 52px;
+
+    background-image: url(../../assets/images/menu-close-icon.svg);
+    border: 0;
+    background-color: transparent;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}

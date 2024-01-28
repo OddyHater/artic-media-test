@@ -9,6 +9,8 @@
   // .footer__wrapper
 
   &__wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
   }
 
   // .footer__logo
@@ -59,9 +61,16 @@
     padding: 0 16px;
   }
 
+
   // .footer__contacts-container
 
   &__contacts-container {
+    display: flex;
+    align-items: start;
+    gap: 10px;
+  }
+
+  &__contacts-content {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -125,15 +134,20 @@
   // .footer__bottom-container
 
   &__bottom-container {
-    display: flex;
-    align-items: center;
-    gap: 49px;
+
     padding: 17px 16px;
 
     font-family: "Nunito", sans-serif;
     color: #fff;
 
     border-top: 1px #D4E4D9 solid;
+  }
+
+  &__bottom-wrapper {
+    display: flex;
+    gap: 49px;
+    max-width: 1180px;
+    margin: 0 auto;
   }
 
   // .footer__copyright
@@ -170,4 +184,3 @@
     border-bottom: 1px #fff solid;
   }
 }
- 

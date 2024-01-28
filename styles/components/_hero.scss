@@ -2,13 +2,14 @@
 
 .hero {
   position: relative;
-
+  
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-  min-height: 720px;
+  min-height: 624px;
 
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.47) 22.4%, rgba(0, 0, 0, 0.47) 100%), url(../../assets/images/hero-bg.png);
   background-size: cover;
@@ -31,7 +32,7 @@
     margin: 0 auto;
 
     font-size: 35px;
-    font-weight: 600;
+    font-weight: 500;
     line-height: 1.2;
     text-transform: uppercase;
     color: #fff;
@@ -56,6 +57,7 @@
 
 .socials {
   position: absolute;
+  z-index: 3;
   right: 32px;
   bottom: 38px;
 
