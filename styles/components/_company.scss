@@ -57,21 +57,67 @@
   // .company__video-container
 
   &__video-container {
+    position: relative;
+
     max-width: 680px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  &__video {
+    display: block;
   }
 
   // .company__video-overlay
 
   &__video-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__overlay-button {
+    display: block;
+    width: 62px;
+    height: 62px;
+
+    border: 0;
+    background-color: transparent;
+    background-image: url(../../assets/images/overlay-button.svg);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    opacity: 1;
+
+    transition: opacity 0.2s ease;
+    
+    &_active {
+      opacity: 0;
+    }
   }
 }
 
 .slider {
+  position: relative;
+
   margin-bottom: 70px;
 
   // .slider__text-container
 
   &__text-container {
+    position: absolute;
+    left: calc(50% - 540px / 2);
+    top: calc(50% - 150px / 2);
+    z-index: 3;
+
+    box-sizing: border-box;
     max-width: 540px;
     margin: 0 auto;
     padding: 20px;
